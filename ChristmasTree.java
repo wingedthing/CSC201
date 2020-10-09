@@ -4,11 +4,6 @@ public class ChristmasTree {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter the size of your tree >> ");
 		int numStars = Integer.valueOf(scan.nextLine());
-		
-		//printTriangle(5);
-		//System.out.println("---");
-		//christmasTree(3);
-		//System.out.println("---");
 		christmasTree(numStars);
 		scan.close();
 	}
@@ -26,18 +21,6 @@ public class ChristmasTree {
 		while (number > 0) {
 			System.out.print(" ");
 			number--;
-		}
-
-	}
-
-	public static void printTriangle(int size) {
-		int stars = 1;
-		int spaces = size - 1;
-		while (stars <= size) {
-			printSpaces(spaces);
-			printStars(stars);
-			stars++;
-			spaces--;
 		}
 
 	}
