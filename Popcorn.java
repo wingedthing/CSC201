@@ -38,6 +38,7 @@ public class Popcorn {
 
     /** typeHead() prints to console a formated graph heading. */
     public static void typeHead() {
+        System.out.printf("%32s %n%n", "Popcorn Co-op");
         System.out.printf("%53s %n", "Production in Hundreds  ");
         System.out.printf("%53s %n", "of Pint Jars per Acre   ");
         System.out.printf("Farm Name" + "%44s %n", "   1   2   3   4   5   6");
