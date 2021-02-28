@@ -5,41 +5,38 @@
 
 import java.util.Scanner;
 
-public class MovieGuide 
-{
-	public static void main(String args[])
-	{
+public class MovieGuide {
+	public static void main(String args[]) {
 		Scanner s = new Scanner(System.in);
 		// Declare and initialize variables.
-		double numStars;         // star rating.
-		String numStarsString; 	 // string version of star rating
-		double averageStars=0;  	 // average star rating.
-		double totalStars = 0; 	 // total of star ratings.
-		int numPatrons = 0;      // keep track of number of patrons
-			
-	
+		double numStars; // star rating.
+		String numStarsString; // string version of star rating
+		double averageStars = 0; // average star rating.
+		double totalStars = 0; // total of star ratings.
+		int numPatrons = 0; // keep track of number of patrons
+
 		// This is the work done in the housekeeping() method
 		// Get input.
 		System.out.print("Enter stars: ");
-				
-                // This is the work done in the detailLoop() method
+
+		// This is the work done in the detailLoop() method
 		// Convert to double.
-         numStars = Double.valueOf(s.nextLine());
-		
+		numStars = Double.valueOf(s.nextLine());
+
 		// Write while loop here
-		while(numStars >= 0){
-            totalStars += numStars;
-            numPatrons++;
-            averageStars = totalStars/numPatrons;
-            System.out.print("Enter stars: ");
-            numStars = Double.valueOf(s.nextLine());
+		while (numStars >= 0) {
+			totalStars += numStars;
+			numPatrons++;
+			averageStars = totalStars / numPatrons;
+			System.out.print("Enter stars: ");
+			numStars = Double.valueOf(s.nextLine());
 
+			// This is the work done in the endOfJob() method
+			// Calculate average star rating
+		}
+		System.out.println("Average Star Value: " + averageStars);
 
-                // This is the work done in the endOfJob() method
-		// Calculate average star rating
-        }
-		System.out.println("Average Star Value: " + averageStars); 
-        
+		s.close();
 		System.exit(0);
 	} // End of main() method.
 
